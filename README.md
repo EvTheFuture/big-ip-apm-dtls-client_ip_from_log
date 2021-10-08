@@ -1,3 +1,7 @@
+![GitHub](https://img.shields.io/github/license/EvTheFuture/big-ip-apm-dtls-client_ip_from_log)
+![GitHub issues](https://img.shields.io/github/issues/EvTheFuture/big-ip-apm-dtls-client_ip_from_log)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/EvTheFuture/big-ip-apm-dtls-client_ip_from_log)
+
 # Introduction
 This script is to be used if you have a BIG-IP APM installation from [F5 networks](https://www.f5.com) connected to a [Checkpoint Identity Aware Firewall](https://www.checkpoint.com/quantum/next-generation-firewall/identity-awareness/) and intend to switch from TLS to DTLS on our Client VPN connections.
 
