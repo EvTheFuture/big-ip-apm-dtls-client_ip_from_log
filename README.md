@@ -22,7 +22,22 @@ The script will then fetch the appropriate information from the session and send
 # Installation
 * Copy the script `checkpoint_identity_awareness_dtls.bash` to the directory `/config` on your BIG-IP system
 * Add the following line to /config/startup (replacing <address> and <secret> with your checkpoint IP adress and shared secret for the Web API) `/config/checkpoint_identity_awareness_dtls.bash -a <address> -s <secret> -d`
+  
+# Command Line Options
+`Usage: checkpoint_identity_awareness_dtls.bash -a <address> -s <secret> [-u <username> -i <ip address>] [OPTIONS]`
 
+| **Option** | **Description** |
+| :--- | :--- |
+|	`-a <address>     ` |	Address where to POST Username/IP **(Manadatory)** |
+|	`-s <secret>      ` |	Secret to use **(Mandatory)** |
+|	`-u <username>    ` |	Send this username immediately and exit |
+|	`-i <ip address>  ` |	Send this IP address immediately and exit |
+|	`-d               ` |	Run in backgroud |
+|	`-v               ` | Be verbose (debug) |
+|	`-k               ` | kill previous instance (if any in /run/<pid>) |
+|	`-h               ` | Print this help |
+
+  
 # Future Improvements
 * Hide secret from command line (and process info) by moving configuration to a configuration file
 
